@@ -49,7 +49,7 @@ class ProfileComponent extends Component {
           };
           reader.readAsDataURL(event.target.files[0]);
         }
-      }
+    }
 
     render() {
 
@@ -95,7 +95,7 @@ class ProfileComponent extends Component {
                             </div>
                             :
                             <form className={classes.form}>
-                                <Typography component="h1" variant="h4">Create Your Profile</Typography>
+                                <Typography component="h1" variant="h4" style={{textAlign: 'center'}}>Create Your Profile</Typography>
                                 <FormControl fullWidth required margin="normal">
                                     <label>Enter your profile picture:</label>
                                     <input type="file" name="image" onChange={this.onImageChange}/>
